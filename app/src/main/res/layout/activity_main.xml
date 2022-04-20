@@ -33,7 +33,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Your name..." />
+            android:text="Your name..."
+            android:selectAllOnFocus="true" />
 
         <EditText
             android:id="@+id/editEmail"
@@ -41,7 +42,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textEmailAddress"
-            android:text="Your email..." />
+            android:text="Your email..."
+            android:selectAllOnFocus="true" />
 
         <EditText
             android:id="@+id/editDateOfBirth"
@@ -49,7 +51,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="date"
-            android:text="Date of birth..." />
+            android:text="Date of birth..."
+            android:selectAllOnFocus="true" />
 
         <EditText
             android:id="@+id/editPhone"
@@ -57,7 +60,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="phone"
-            android:text="Phone..." />
+            android:text="Phone..."
+            android:selectAllOnFocus="true" />
 
         <Switch
             android:id="@+id/swMarried"
@@ -75,7 +79,7 @@
         <TextView
             android:id="@+id/txtResult"
             android:layout_width="match_parent"
-            android:layout_height="269dp"
+            android:layout_height="440dp"
             android:textColor="@color/teal_200" />
 
     </LinearLayout>
