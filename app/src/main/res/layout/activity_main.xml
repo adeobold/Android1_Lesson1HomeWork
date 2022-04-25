@@ -6,13 +6,81 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
 
+        <TextView
+            android:id="@+id/txtView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="@integer/material_motion_duration_medium_2"
+            android:fontFamily="serif"
+            android:text="Let's fill the fields!"
+            android:textStyle="bold|italic"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textAlignment="center"
+            />
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Your name..."
+            android:selectAllOnFocus="true" />
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:text="Your email..."
+            android:selectAllOnFocus="true" />
+
+        <EditText
+            android:id="@+id/editDateOfBirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"
+            android:text="Date of birth..."
+            android:selectAllOnFocus="true" />
+
+        <EditText
+            android:id="@+id/editPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:text="Phone..."
+            android:selectAllOnFocus="true" />
+
+        <Switch
+            android:id="@+id/swMarried"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Are you married?" />
+
+        <Button
+            android:id="@+id/btnResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lets see result!" />
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="match_parent"
+            android:layout_height="440dp"
+            android:textColor="@color/teal_200" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
